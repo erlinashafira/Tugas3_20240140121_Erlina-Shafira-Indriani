@@ -1,3 +1,6 @@
+let tanggal = new Date();
+document.getElementById("tanggal").innerHTML = tanggal;
+
 function kirimData() {
   var nama = document.getElementById("namaAnda").value;
   var nim = document.getElementById("nimAnda").value;
@@ -16,13 +19,11 @@ function kirimData() {
     return;
   }
 
-  var nilaiBidang = bidang.value;
-
   alert(
     "Nama: " + nama +
     "\nNIM: " + nim +
     "\nAngkatan: " + angkatan +
-    "\nPeminatan: " + nilaiBidang +
+    "\nPeminatan: " + bidang.value +
     "\nTanggal: " + tanggal +
     "\nAlamat: " + alamat
   );
