@@ -12,16 +12,17 @@
         <div class="header">
           <h3>Pendaftaran Peminatan</h3>
         </div>
+
         <form action="">
-          <label for="nama">Nama</label><br />
+          
+          <label for="namaAnda">Nama</label><br />
           <input
             type="text"
             placeholder="Nama anda"
             id="namaAnda"
           /><br /><br />
 
-        <form action="">
-          <label for="NIM">NIM</label><br />
+          <label for="nimAnda">NIM</label><br />
           <input
             type="text"
             placeholder="NIM anda"
@@ -32,10 +33,10 @@
           <select name="Angkatan" id="Angkatan">
             <option value="">-- Pilih Angkatan --</option>
             <option value="2021">2021</option>
-            <option value="2021">2022</option>
-            <option value="2021">2023</option>
-            <option value="2024">2024</option></select
-          ><br /><br />
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
+          </select><br /><br />
 
           <p>Peminatan Pada Bidang</p>
           <input type="radio" name="Bidang" id="Programming" value="Programming" />
@@ -53,12 +54,21 @@
           <label for="tanggalLahir">Tanggal</label><br />
           <input type="date" id="tanggalLahir" /><br /><br />
 
-          <label for="Alamat">Alamat</label><br />
+          <label for="deskripsi">Alamat</label><br />
           <textarea
             placeholder="Tulis Alamatmu di sini"
             name="Alamat"
             id="deskripsi"
             cols="30"
             rows="5"
-          ></textarea
-          ><br /><br />
+          ></textarea><br /><br />
+
+          <button type="button" onclick="kirimData()">Submit</button>
+
+        </form>
+      </div>
+    </center>
+
+    <script src="script.js"></script>
+  </body>
+</html>
