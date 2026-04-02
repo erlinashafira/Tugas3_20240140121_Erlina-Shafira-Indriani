@@ -26,4 +26,19 @@ function kirimData() {
     "\nTanggal: " + tanggal +
     "\nAlamat: " + alamat
   );
+
+  clearForm();
+}
+
+function clearForm() {
+  document.getElementById("namaAnda").value = "";
+  document.getElementById("nimAnda").value = "";
+  document.getElementById("Angkatan").value = "";
+  document.getElementById("tanggalLahir").value = "";
+  document.getElementById("deskripsi").value = "";
+
+  var radioButtons = document.querySelectorAll('input[name="Bidang"]');
+  for (var i = 0; i < radioButtons.length; i++) {
+    radioButtons[i].checked = false;
+  }
 }
